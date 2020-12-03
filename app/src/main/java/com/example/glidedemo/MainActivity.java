@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindString(R.string.app_name)
     String str;
+    
+    @BindBitmap(R.drawable.a)
+    Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         textView.setText(str);
+        imageView.setImageBitmap(bitmap);
 
     }
 
